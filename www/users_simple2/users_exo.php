@@ -19,7 +19,7 @@
     <h1>Utilisateurs</h1>
 
     <?php
-    // data source name = chaine de 
+    // data source name = chaine de connexion
 
     $dsn = 'mysql:host=localhost;port=3306;dbname=db_users_simple;charset=utf8';
 
