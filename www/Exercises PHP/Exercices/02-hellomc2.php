@@ -1,11 +1,13 @@
 <?php
 
 //Exercice 2
-$name ='Einstein';
-
-function QuiEstMC2 (string $name){
 
 
-    return $name;
+function QuiEstMC2 (){
+
+
+    return 'Einstein';
 
 }
+
+echo QuiEstMC2();

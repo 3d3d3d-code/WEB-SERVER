@@ -1,9 +1,10 @@
 <?php
 // Exercice 3
-$date = date('d-m-Y');
 
-function dateDuJour($date){
 
-    return $date;
+
+function dateDuJour(){
+
+    return  date('d-m-Y');
 }
-echo ("la date du jour est le  $date");
+echo ("la date du jour est le " . dateDuJour());

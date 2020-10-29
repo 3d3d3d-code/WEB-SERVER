@@ -1,7 +1,7 @@
 <?php
 
 //Exercice 14
-$password;
+
 
 function PassordLength(string $password)
 {
@@ -12,16 +12,14 @@ function PassordLength(string $password)
 
         return false;
     }
-
+}
     //Exercice 15
 
-    function  PasswordCheck(){
-if(strlen($password) >= 8 && $password>0 && str ){
+function  PasswordCheck(string $password)
+{
+    if(PassordLength($password) && $password>0 && str ){
 
-
-return true;
-}
-
-
+        return true;
     }
 }
+
