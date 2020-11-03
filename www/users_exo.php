@@ -30,8 +30,8 @@ $dbConnect = new PDO($dsn,'root','');
 
 /**CONSIGNES :
  * 
- * sI LE PARAMETRE 'id' est fourni dans l 'url :
- * Afficher l utilisateur correspondant a l id <i class="afficher 'aucun resultat si aucun utilisateur n est trouve
+ * Si le parametre 'id' est fourni dans l 'url :
+ * Afficher l utilisateur correspondant a l'id <i class="afficher 'aucun resultat si aucun utilisateur n est trouve
  * 
  * Sinon 
  * afficher tous les utilisateurs
