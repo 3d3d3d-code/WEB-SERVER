@@ -1,5 +1,8 @@
 <?php
 
+/**classe Modele
+ * represente l utilisateur de la table "users"
+ */
 
 class User
 {
