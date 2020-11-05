@@ -1,84 +1,80 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+html {
+    box-sizing: border-box;
 }
 
-body{
-
-display: grid;
-
-background-color:#2565A1 ;
-
+* {
+    margin: 0;
+    padding: 0;
 }
-header{
+
+.container {
+    display: grid;
+    background-color: #2565A1;
+    grid-template-rows:20px 20px 80% 20px ;
+    grid-template-columns:20px 100px  ;
+    grid-template-areas: "header header nav" "main main main" "footer footer footer";
+}
+
+header {
     display: inline-block;
     width: 100%;
-   padding: 25px 80px;
-   background-color: thistle;
-   position: relative;
+    padding: 25px 80px;
+    background-color: thistle;
+    position: relative;
     
 }
-nav{
-    float: right;
 
+nav {}
 
+main {}
 
-}
-footer{
-    background-color: tomato;
-   text-align: center;
-   color: white;
-    
-
-
-
-}
-
-nav ul li{
-    display: inline-block;
-    padding:15px 25px ;
+footer {
+    background-color:#70B0DC;
+    background-color: ;
+    text-align: center;
     color: white;
-
-
 }
-nav ul li a{
 
+.
+/**
+
+
+
+
+header {
+    display: inline-block;
+    width: 100%;
+    padding: 25px 80px;
+    background-color: thistle;
+    position: relative;
+}
+
+nav {
+    float: right;
+}
+
+footer {
+    background-color: tomato;
+    text-align: center;
+    color: white;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 15px 25px;
+    color: white;
+}
+
+nav ul li a {
     text-decoration: none;
- 
 }
 
-
-   
-
-
-
-.logo{
-    float:left;
-
-
+.logo {
+    float: left;
 }
 
-@media screen (){
+ @media screen and(max-width:500px){
 
 
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and(max-width:500px){
-
-
-
-}
+}*/

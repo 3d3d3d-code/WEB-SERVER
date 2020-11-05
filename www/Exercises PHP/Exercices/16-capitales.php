@@ -33,5 +33,7 @@ function Capitales($pays)
         case "Tout autre pays":
             return "Inconnu";
             break;
+
+            echo  $pays;
     }
 }

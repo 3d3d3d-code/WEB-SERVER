@@ -3,8 +3,14 @@
 
 
 
-function dateDuJour(){
+function dateDuJour()
+{
 
-    return  date('d-m-Y');
+    $date = new DateTime();
+
+    $result = $date->format('d-m-Y');
+    echo $result;
+    return $result;
 }
-echo ("la date du jour est le " . dateDuJour());
+$date = dateDuJour();
+// attention le return arrete la fonction donc a mettre a la fin
