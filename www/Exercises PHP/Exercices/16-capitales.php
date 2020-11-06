@@ -10,6 +10,7 @@ function Capitales($pays)
         case "Allemagne":
             return "Berlin";
             break;
+
         case "Italie":
             return "Rome";
             break;
@@ -29,11 +30,8 @@ function Capitales($pays)
         case "Angleterre":
             return "Londres";
             break;
-        default;
-        case "Tout autre pays":
+        default:
             return "Inconnu";
             break;
-
-            echo  $pays;
     }
 }
