@@ -14,7 +14,7 @@ $nom = concatenation('Mickael','Devoldere');
 function concatenationV2($Argument1, $Argument2)
 {
 $Argument1 = mb_strtolower($Argument1);
-$Argument2 = mb_convert_case($Argument2,MB_CASE_UPPER);  // toutes les premieres lettres passent en majuscule et les accent sont conserves. 
+$Argument2 = mb_convert_case($Argument2,MB_CASE_UPPER);  // toutes les premieres lettres passent en majuscule et les accents sont conserves. 
 
   return  strtolower($Argument1) . " " . strtoupper($Argument2);
 }

@@ -1,6 +1,6 @@
 <?php
 
-$prenom ="Reda"
+$prenom ="Reda";
 $age = 78;
 
 echo'Hello '.$prenom;
@@ -64,13 +64,13 @@ do{
     echo "i2 = $i <br>";
     $i++;
 }
-while($i<10)
+while($i<10){
 
 
 for($i=o;$i<10;$i++){
 
-    echo"i3=$i <br>"
+    echo"i3=$i <br>";
 }
 echo'<br>';
 
-
+}
