@@ -7,7 +7,7 @@ echo'Hello '.$prenom;
 
 echo'<br>';
 echo "as tu $age ans?" ;
-echo<'<br>';
+echo'<br>';
 echo'oui ';
 
 
@@ -47,7 +47,7 @@ echo'<br>';
 
 // boucle while et 
 
-$i =o;
+$i =0;
 while ($i < 10) {
   echo"i=$i <br>";
   $i++;}
@@ -67,7 +67,7 @@ do{
 while($i<10){
 
 
-for($i=o;$i<10;$i++){
+for($i=0;$i<10;$i++){
 
     echo"i3=$i <br>";
 }
