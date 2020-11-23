@@ -5,7 +5,7 @@ array_push($maVar, 'BROWN'); // meme chose pour BROWN
 echo count($maVar); // nombre d'elements damns le tableau
 echo "\n"; // separer les  elelements
 
-echo reset($maVar); //1er element du tableau (et le dernier si il n y a qu un seul eleemet bien sur)
+echo reset($maVar); //1er element du tableau (et le dernier si il n y a qu un seul element bien sur)
 echo "\n";
 echo end($maVar); // dernier element du tableau
 

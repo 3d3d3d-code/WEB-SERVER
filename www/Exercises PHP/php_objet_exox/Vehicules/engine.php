@@ -1,12 +1,10 @@
 <?php
 
 
-class engine{
+class Engine
+{
 
 
-protected $id;
-protected $speed_maax;
-
-
-
+    protected $id;
+    protected $speed_maax;
 }
