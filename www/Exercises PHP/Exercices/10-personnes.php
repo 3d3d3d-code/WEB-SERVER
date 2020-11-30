@@ -17,7 +17,7 @@ function EstMajeur(int $age)
 
 function CalculRetraite(int $age)
 {
-    $retraite = 60;
+    $retraite = 60; 
 
     if ($age < 0) {
 
