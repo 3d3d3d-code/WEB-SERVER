@@ -45,7 +45,7 @@ switch($age)
 echo'<br>';
 
 
-// boucle while et 
+// boucle while 
 
 $i =0;
 while ($i < 10) {
@@ -57,15 +57,19 @@ while ($i < 10) {
 
 //boucle do while 
 
- int $i=0 ;
+ $i =0 ;
 
 do{
 
-    echo "i2 = $i <br>";
+    echo $i . PHP_EOL;
     $i++;
 }
-while($i<10) {
+while($i<10) ;
  
+
+
+
+    // Boucle for
 
 for($i=0;$i<10;$i++){
 
@@ -73,4 +77,5 @@ for($i=0;$i<10;$i++){
 }
 echo'<br>';
 
-}
+
+?>

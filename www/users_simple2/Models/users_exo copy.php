@@ -9,7 +9,7 @@
     class Users_exo{
     
     
-        private PDO #$pdo;
+        private PDO $pdo;
 
 
         public function __construct()
@@ -23,7 +23,7 @@
             $statement =$this->pdo->query("SELECT * FROM users ");
             return $statement->fetchAll(PDO::FETCH_ASSOC);
         }
-        }
+    }
         $users = new Users();
         $users->findAll();
         
@@ -46,7 +46,7 @@
     
     
     
-    }
+    
 
 
     ?>
