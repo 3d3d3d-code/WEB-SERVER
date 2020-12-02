@@ -1,20 +1,7 @@
-<?php 
-
-
-class Voiture 
-{
-    private Moteur $_moteur;
-
-    public function __construct(Moteur $newMoteur)
-    {
-        $this->_moteur = $newMoteur;
-    }
-}
 
 
 
-
-?>
+<?php
 
 
 
@@ -25,10 +12,7 @@ class Voiture
 
 
 
-
-
-/**
- * Classe Voiture
+/** Classe Voiture
  * 
  * cette classe represente une voiture
  * Exemple d'utilisation :
@@ -37,71 +21,88 @@ class Voiture
  * @author Reda
  * @version 0.0.1
  * @copyright 2020 Reda
- * 
  */
+
 
 class voiture
 {
-    protected $voiture_imat;
-    protected $voiture_marque;
-    protected $voiture_modele;
-    protected $voiture_poids;
+
+    protected  string $marque;
+    protected  string $modele;
+    protected int  $poids;
 
     /**
      * creation du constructeur
      *  */
-    public function __construct(int $voiture_imat, string $voiture_marque, string $voiture_modele, float $voiture_poids)
+    public function __construct(string $marque, string $modele, int $poids=1000)
     {
-        $this->_voiture_imat = $voiture_imat;
-        $this->_voiture_marque = $voiture_marque;
-        $this->_voiture_modele = $voiture_modele;
-        $this->_voiture_poids = $voiture_poids;
+        $this->setMarque($marque);
+        $this->setModele($modele);
+        $this->setPoids($poids);
+
+    }
+
+    #GETTER 
+
+    public function getMarque(): string
+    {
+
+        return $this->marque;
     }
 
 
 
-    public function infoVoiture()
+    public function getModele(): string
     {
+
+        return $this->modeleVoiture;
     }
-    /**
-     * creattion des accesseurs (getter et setter)
-     */
 
-    // getter
-    public function getVoitureNom($voiture_marque)
+    public function getPoids(): ?int 
     {
-
-        $this->_voiture_marque = $voiture_marque;
-    }
-    public function getVoitureModele($voiture_modele)
-    {
-
-        $this->_voiture_modele = $voiture_modele;
-    }
-    public function getVoiturePoids($voiture_poids)
-    {
-
-        $this->_voiture_poids = $voiture_poids;
+        return $this->poids ??null;
     }
 
 
-    //setter
-    public function setVoitureMarque($voiture_marque)
+    #SETTER
+
+    public function setModele(string $modele)
     {
+        if (empty($modele)) {
+
+            $this->modele = 'ce modele n existe pas';
+        } else {
+            $this->modele = $modele;
+        }
     }
-    public function setVoitureModele($voiture_modele)
+    public function setMarque(string $marque)
     {
-    }
-    public function setVoiturePoids($voiture_poids)
-    {
+        if (empty($marque)) {
+            $this->marque = 'cette marque n existe pas';
+        } else {
+
+            $this->marque = $marque;
+        }
     }
 
-    public function VoitureVitesseMax(float $moteur_vitesse_max, float $voiture_poids)
-    {
+    public function setPoids(int $poids){
 
-        $resultat = $moteur_vitesse_max - ($voiture_poids * 30 / 100);
+        if(empty($poids)){
 
-        return $resultat;
+            $this->poids = 'poids inconnu' ;
+        }else{
+            $this->poids = $poids;
+
+        }
     }
+
+    #methode
+
+    public function getInfo(){
+
+        return "$this->marque : $this->modele  : $this->poids";
+     
+    }
+
+    
 }
-*/

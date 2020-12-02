@@ -1,34 +1,12 @@
 <?php
 
 
-require 'Moteur.php';
+
 
 require 'Voiture.php';
 
-/**
- * AGGREGATION
- * Création d'un moteur partagé 
- * Ajout du même Moteur à 2 Voitures différentes
- */
+$voiture1 = new voiture("peugeot","clio","650");
+echo $voiture1->getInfo();
 
-$moteur = new Moteur();
-
-$v1 = new Voiture($moteur);
-
-$v2 = new Voiture($moteur);
-
-$v1 = null;
-$v2 = null;
-
-
-
-
-
-/** COMPOSITION 
- * L'instance du Moteur est directement créée dans le constructeur de la Voiture
- * Chaque Voiture possède son propre Moteur
-*/
-
-$v2 = new Voiture(new Moteur());
 
 
