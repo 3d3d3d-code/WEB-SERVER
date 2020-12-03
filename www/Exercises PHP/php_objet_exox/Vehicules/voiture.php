@@ -34,12 +34,11 @@ class voiture
     /**
      * creation du constructeur
      *  */
-    public function __construct(string $marque, string $modele, int $poids=1000)
+    public function __construct(string $marque, string $modele, int $poids = 1000)
     {
         $this->setMarque($marque);
         $this->setModele($modele);
         $this->setPoids($poids);
-
     }
 
     #GETTER 
@@ -58,9 +57,9 @@ class voiture
         return $this->modeleVoiture;
     }
 
-    public function getPoids(): ?int 
+    public function getPoids(): ?int
     {
-        return $this->poids ??null;
+        return $this->poids ?? null;
     }
 
 
@@ -85,24 +84,22 @@ class voiture
         }
     }
 
-    public function setPoids(int $poids){
+    public function setPoids(int $poids)
+    {
 
-        if(empty($poids)){
+        if (empty($poids)) {
 
-            $this->poids = 'poids inconnu' ;
-        }else{
+            $this->poids = 'poids inconnu';
+        } else {
             $this->poids = $poids;
-
         }
     }
 
     #methode
 
-    public function getInfo(){
+    public function getInfo()
+    {
 
         return "$this->marque : $this->modele  : $this->poids";
-     
     }
-
-    
 }
