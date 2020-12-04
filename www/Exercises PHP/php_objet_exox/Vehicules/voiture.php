@@ -23,22 +23,23 @@
  * @copyright 2020 Reda
  */
 
-
+require Moteur;
 class voiture
 {
 
     protected  string $marque;
     protected  string $modele;
     protected int  $poids;
-
+    protected  Moteur $moteur;
     /**
      * creation du constructeur
      *  */
-    public function __construct(string $marque, string $modele, int $poids = 1000)
+    public function __construct(string $marque, string $modele, int $poids)
     {
         $this->setMarque($marque);
         $this->setModele($modele);
         $this->setPoids($poids);
+        $this->setMoteur = ($moteur);
     }
 
     #GETTER 
@@ -94,6 +95,14 @@ class voiture
             $this->poids = $poids;
         }
     }
+        public function setMoteur(string $moteur){
+
+           
+           
+                $this->moteur = $moteur;
+            }
+        }
+
 
     #methode
 
@@ -101,5 +110,12 @@ class voiture
     {
 
         return "$this->marque : $this->modele  : $this->poids";
+    }
+
+    public function vitesseMaxVoiture(int $vitesseMax, int $poids)
+    {
+
+        $resultat = $vitesseMax - ($poids * 30 / 100);
+        return $resultat;
     }
 }

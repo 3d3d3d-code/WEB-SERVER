@@ -53,12 +53,7 @@ public function setMoteur(string $moteur){
 }
     
 
-public function vitesseMax(int $vitesseMax,int $poids){
 
-$resultat= $vitesseMax - ($poids * 30/100) ;
-return $resultat;
-
-}
 
 }
 
